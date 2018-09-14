@@ -8,3 +8,4 @@ The code tends to be somewhat large.
 
 So far, I can compile a superlanguage to Lambda Calc, to SKI combinator calc, to LispLisp.
 
+NOTE: THE DEFINITION OF THE LANGUAGE WILL PROBABLY CHANGE SOON.
