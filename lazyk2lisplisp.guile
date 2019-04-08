@@ -1,0 +1,11 @@
+(use-modules (ice-9 pretty-print))
+
+(define (ski-to-lisplisp f)
+  (cond ((pair? f) (cons (ski-to-lisplisp (car f)) (ski-to-lisplisp (cdr f))))
+        ((eq? 'S f) '(lisp (lisp (lisp (lisp lisp)))))
+        ((eq? 'K f) '(lisp (lisp (lisp lisp))))
+        ((eq? 'I f) '(lisp lisp))
+        (else '() )))
+
+(define (lazyk-to-lisplisp code)
+    (pretty-print (ski-to-lisplisp code)))
