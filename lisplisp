@@ -1,0 +1,8 @@
+#!/bin/bash
+
+scheme="racket -r"
+program=$1
+
+SKI=`cat $1 | $scheme parse-to-ski.scm`
+
+./lazyk <(echo $SKI)
