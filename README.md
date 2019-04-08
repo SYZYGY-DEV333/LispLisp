@@ -7,4 +7,8 @@ Both of the above, incidentally, are licensed under GPL version 2. I intend to w
 under my preferred Apache license. Until then, however, note that the lazyk.hs and lazyk.c files are GPL version 2, and the rest
 of the stuff is Apache.
 
+In the Bash file, entitled "lisplisp" here, you can change the default Scheme interpreter. I have tested both Guile and Racket,
+and they work fine. However, any other proper Scheme should work too. The only one of these programs that can only be run on
+Guile is the one with the .guile suffix, obviously.
+
 Have fun.
